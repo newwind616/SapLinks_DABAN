@@ -1,0 +1,15 @@
+
+记录时间：2019-02-27 12:00:21,561 
+线程ID:[8]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\Helper\MainFile.cs 第28行
+错误描述：System.IO.DirectoryNotFoundException: 未能找到路径“H:\CSV\DICS_SSO20190227120021.CSV”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 SAPLinks.MainFile.WriteFile(String filePath, String fileName, String msg, Encoding encoding) 位置 H:\SAPLinks-190227\SAPLinks\Helper\MainFile.cs:行号 28
+-----------------------------------------

@@ -1,0 +1,42 @@
+记录时间：2018-12-12 18:35:55,065 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第237行
+调试描述：update A set two='99' where one='13'
+-----------------------------------------
+记录时间：2018-12-12 18:35:55,892 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第317行
+调试描述：INSERT INTO BPMSYSMESSAGESQUEUE(PROVIDERNAME,ADDRESS,TITLE,MESSAGE,CREATEAT,FAILCOUNT) VALUES ('mail','liu.zhenliang@daikin.co.jp','售后业务-DSCG失败','对象名 ''A'' 无效。
+   在 SAPLinks.SQLHelper.ExecuteNonQuery(SqlCommand& cmd, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 245
+   在 SAPLinks.Helper.SaveFile.SapLinksQueueConnection.ExecuteQuery() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\SaveFile\DB\SapLinksQueueConnection.cs:行号 21
+   在 SAPLinks.Helper.SaveFile.SapSaveFileProvider.DoSave() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\SaveFile\File\SapSaveFileProvider.cs:行号 16
+   在 SAPLinks.Helper.SaveFile.ISaveFileProvider.SaveFile() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\SaveFile\File\ISaveFileProvider.cs:行号 62
+   在 SAPLinks.MainStartAppTest.Go() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\MainStartAppTest.cs:行号 23
+   在 SAPLinks.MainStartAppTest.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\MainStartAppTest.cs:行号 15',GETDATE(),0);
+
+-----------------------------------------
+记录时间：2018-12-12 18:36:23,763 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第237行
+调试描述：update A set two='99' where one='13'
+-----------------------------------------
+记录时间：2018-12-12 18:37:16,742 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第237行
+调试描述：update BPMSysUsers set Password='sa' where Account='asdasdasdasdads'
+-----------------------------------------
+记录时间：2018-12-12 18:37:27,679 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第237行
+调试描述：update BPMSysUsers set Password='sa' where Account='asdasdasdasdads'
+-----------------------------------------

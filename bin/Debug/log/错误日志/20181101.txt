@@ -1,0 +1,79 @@
+
+记录时间：2018-11-01 11:06:33,903 
+线程ID:[10]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs 第27行
+错误描述：在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.AfterSaleBussiness.AfterSaleObject.BasicDataLoad() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\AfterSaleObject.cs:行号 113
+   在 SAPLinks.Bussiness.AfterSaleBussiness.AfterSaleObject..ctor(String filePath, String salePrefix, String prPrefix, String fileSuffix, String company, String sap_cd, BaseAction baseAction) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\AfterSaleObject.cs:行号 46
+   在 SAPLinks.Bussiness.AfterSaleBussiness.DSC_B.KPSQ..ctor(String filePath, String salePrefix, String prPrefix, String fileSuffix, String company, String sap_cd, BaseAction baseAction) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\DSC_B\KPSQ.cs:行号 17
+   在 SAPLinks.Bussiness.AfterSaleBussiness.DSC_B.DSC_B_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\DSC_B\DSC_B_Action.cs:行号 13
+-----------------------------------------
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Exception: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.AfterSaleBussiness.AfterSaleObject.BasicDataLoad() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\AfterSaleObject.cs:行号 113
+   在 SAPLinks.Bussiness.AfterSaleBussiness.AfterSaleObject..ctor(String filePath, String salePrefix, String prPrefix, String fileSuffix, String company, String sap_cd, BaseAction baseAction) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\AfterSaleObject.cs:行号 46
+   在 SAPLinks.Bussiness.AfterSaleBussiness.DSC_B.KPSQ..ctor(String filePath, String salePrefix, String prPrefix, String fileSuffix, String company, String sap_cd, BaseAction baseAction) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\DSC_B\KPSQ.cs:行号 17
+   在 SAPLinks.Bussiness.AfterSaleBussiness.DSC_B.DSC_B_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\DSC_B\DSC_B_Action.cs:行号 13
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs:行号 27
+
+记录时间：2018-11-01 11:07:38,997 
+线程ID:[10]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs 第27行
+错误描述：在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.AfterSaleBussiness.AfterSaleObject.BasicDataLoad() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\AfterSaleObject.cs:行号 113
+   在 SAPLinks.Bussiness.AfterSaleBussiness.AfterSaleObject..ctor(String filePath, String salePrefix, String prPrefix, String fileSuffix, String company, String sap_cd, BaseAction baseAction) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\AfterSaleObject.cs:行号 46
+   在 SAPLinks.Bussiness.AfterSaleBussiness.DSC_B.KPSQ..ctor(String filePath, String salePrefix, String prPrefix, String fileSuffix, String company, String sap_cd, BaseAction baseAction) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\DSC_B\KPSQ.cs:行号 17
+   在 SAPLinks.Bussiness.AfterSaleBussiness.DSC_B.DSC_B_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\DSC_B\DSC_B_Action.cs:行号 13
+-----------------------------------------
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Exception: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.AfterSaleBussiness.AfterSaleObject.BasicDataLoad() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\AfterSaleObject.cs:行号 113
+   在 SAPLinks.Bussiness.AfterSaleBussiness.AfterSaleObject..ctor(String filePath, String salePrefix, String prPrefix, String fileSuffix, String company, String sap_cd, BaseAction baseAction) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\AfterSaleObject.cs:行号 46
+   在 SAPLinks.Bussiness.AfterSaleBussiness.DSC_B.KPSQ..ctor(String filePath, String salePrefix, String prPrefix, String fileSuffix, String company, String sap_cd, BaseAction baseAction) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\DSC_B\KPSQ.cs:行号 17
+   在 SAPLinks.Bussiness.AfterSaleBussiness.DSC_B.DSC_B_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\DSC_B\DSC_B_Action.cs:行号 13
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs:行号 27
+
+记录时间：2018-11-01 11:25:18,411 
+线程ID:[9]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs 第27行
+错误描述：对象不能从 DBNull 转换为其他类型。
+   在 System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   在 SAPLinks.Bussiness.AfterSaleBussiness.FKTZSZYDEntityCollection.AggData(DataTable dt) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSZYDDetail\FKTZSZYDEntityCollection.cs:行号 48
+   在 SAPLinks.Bussiness.AfterSaleBussiness.FKTZSZYDEntityCollection.Load(ApplyNoEntity applyNoEntity) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSZYDDetail\FKTZSZYDEntityCollection.cs:行号 13
+   在 SAPLinks.Bussiness.AfterSaleBussiness.FKTZSServiceEntity.Load(ApplyNoEntity applyNoEntity) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSServiceEntity.cs:行号 41
+   在 SAPLinks.Bussiness.AfterSaleBussiness.FKTZSMainBaseStartApp.Load(ApplyNoBasicEntity applyNoBasicEntity) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSMainBaseStartApp.cs:行号 36
+   在 SAPLinks.Bussiness.AfterSaleBussiness.FKTZS.GetData() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\FKTZS.cs:行号 38
+   在 SAPLinks.Bussiness.AfterSaleBussiness.DSC_B.DSC_B_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\DSC_B\DSC_B_Action.cs:行号 18
+-----------------------------------------
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidCastException: 对象不能从 DBNull 转换为其他类型。
+   在 System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   在 SAPLinks.Bussiness.AfterSaleBussiness.FKTZSZYDEntityCollection.AggData(DataTable dt) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSZYDDetail\FKTZSZYDEntityCollection.cs:行号 48
+   在 SAPLinks.Bussiness.AfterSaleBussiness.FKTZSZYDEntityCollection.Load(ApplyNoEntity applyNoEntity) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSZYDDetail\FKTZSZYDEntityCollection.cs:行号 13
+   在 SAPLinks.Bussiness.AfterSaleBussiness.FKTZSServiceEntity.Load(ApplyNoEntity applyNoEntity) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSServiceEntity.cs:行号 41
+   在 SAPLinks.Bussiness.AfterSaleBussiness.FKTZSMainBaseStartApp.Load(ApplyNoBasicEntity applyNoBasicEntity) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSMainBaseStartApp.cs:行号 36
+   在 SAPLinks.Bussiness.AfterSaleBussiness.FKTZS.GetData() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\FKTZS.cs:行号 38
+   在 SAPLinks.Bussiness.AfterSaleBussiness.DSC_B.DSC_B_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\AfterSaleBussiness\DSC_B\DSC_B_Action.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs:行号 27

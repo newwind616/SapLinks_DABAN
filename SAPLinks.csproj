@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8312C1B1-5C93-4881-8E75-BF7698A4800B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAPLinks</RootNamespace>
+    <AssemblyName>SAPLinks</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>C:\Users\Mason\Desktop\SAPLinks\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FD4DD73E5047A2D3A18C62465575DA0F2A7CF969</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SAPLinks_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MLog">
+      <HintPath>..\..\..\MLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bussiness\AfterSaleBussiness\DSCG\DSCG_Action.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\DSCG\KPSQ.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\DSC_B\DSC_B_Action.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\DSC_B\KPSQ.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\WC\AccountPayableAdvanceReceivedAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\WC\ActualPayableAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\WC\CostAdjustmentAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\WC\InputVatAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\WC\InputVATDifferenceAdjustmentAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\WC\InputVATDifferencesTurnOutCreditAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\WC\InputVATDifferencesTurnOutDebtorAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\KPSQ\IKPSQ.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\KPSQ\KPSQFactory.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\KPSQ\KPSQ_WC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\KPSQ\KPSQ_YC.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DataConvert_New.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICS\DICS.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSC_B\DSC_B_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSC_B\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSC_B\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSC_B\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSC_B\ZSK.cs" />
+    <Compile Include="Bussiness\KFSQ\AccVouch.cs" />
+    <Compile Include="Bussiness\KFSQ\DICS\DICS_Action.cs" />
+    <Compile Include="Bussiness\ObjectDataMaster\ObjectDataMaster_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DICG\DICG.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DICG\DICG_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DICB\DICB.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DICB\DICB_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCSL\DCSL.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCSL\DCSL_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSZ\DSZ.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSZ\DSZ_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DICN\DICN.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DICN\DICN_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DICW\DICW.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DICW\DICW_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCSG\DSCG.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCSG\DSCG_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSCB\DSCS.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSCB\DSCS_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSCS_B\DSCBJ.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSCS_B\DSCBJ_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCMH\DCMH.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCMH\DCMH_Action.cs" />
+    <Compile Include="Bussiness\ReceiptApply\DICS\JXBatchListEntity.cs" />
+    <Compile Include="Bussiness\ReceiptApply\DICS\RecEntity.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\DSCW\DSCW_Action.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\DSCW\KPSQ.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\BaseAccountingSubject\AAccountPayableAdvanceReceivedAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\BaseAccountingSubject\AActualPayableAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\BaseAccountingSubject\ACostAdjustmentAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\BaseAccountingSubject\AInputVatAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\BaseAccountingSubject\AInputVATDifferenceAdjustmentAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\BaseAccountingSubject\AInputVATDifferencesTurnOutCreditAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\BaseAccountingSubject\AInputVATDifferencesTurnOutDebtorAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\IAccountingSubject.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\ApplyNoInfo.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\DSCS\DSCS_Action.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\DSCS\KPSQ.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\DSC\DSC_Action.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSZYDDetail\FKTZSZYDEntity.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSZYDDetail\FKTZSZYDEntityCollection.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZS.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\YC\AccountPayableAdvanceReceivedAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\YC\ActualPayableAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\YC\CostAdjustmentAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\YC\InputVatAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\YC\InputVATDifferenceAdjustmentAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\YC\InputVATDifferencesTurnOutCreditAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\YC\InputVATDifferencesTurnOutDebtorAC.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccVouch.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\DSC\KPSQ.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSMainStartApp.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSProcessType.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSServiceEntity.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSServiceManager.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSYCWCType.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\FKTZS\FKTZS_C_HEntity.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\IFKTZSMainStartApp.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\Invoice\InvoiceEntity.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\Invoice\InvoiceEntityCollection.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\Invoice\InvoiceType.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\Invoice\InvoiceTypeFactory.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\KPSQ\KPSQEntity.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\KPSQ\KPSQEntityCollection.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\MergeObject.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\QueueApplyNo\ApplyNoEntityCollection.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\QueueApplyNo\ISapLinksQueue.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\QueueApplyNo\ApplyNoEntity.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\QueueApplyNo\ApplyNoBasicEntity.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\QueueApplyNo\LinkType.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\QueueApplyNo\SapLinksQueue.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\QueueApplyNo\SapLinksQueueFactory.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSServiceManagerEntity.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\FKTZProvider\FKTZSMainBaseStartApp.cs" />
+    <Compile Include="Bussiness\ReceiptApply\DICS\Rec_Action.cs" />
+    <Compile Include="Bussiness\ReceiptApply\DICS\RecList.cs" />
+    <Compile Include="Bussiness\BaseAction.cs" />
+    <Compile Include="Bussiness\BinYi_Synchor\DICB\DICB_Action.cs" />
+    <Compile Include="Bussiness\BinYi_Synchor\DICN\DICN_Action.cs" />
+    <Compile Include="Bussiness\BinYi_Synchor\DICW\DICW_Action.cs" />
+    <Compile Include="Bussiness\BinYi_Synchor\DICG\DICG_Action.cs" />
+    <Compile Include="Bussiness\BinYi_Synchor\DSCS\DSCS_Action.cs" />
+    <Compile Include="Bussiness\BinYi_Synchor\DSC\DSC_Action.cs" />
+    <Compile Include="Bussiness\BinYi_Synchor\DICS\DICS_Action.cs" />
+    <Compile Include="Bussiness\BinYi_Synchor\DFS\DICS_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICN\DICN_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICN\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICN\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICN\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICN\ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICB\DICB_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICB\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICB\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICB\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICB\ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICW\DICW_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICW\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICW\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICW\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICW\ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICG\DICG_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICG\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICG\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICG\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICG\ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCW\DSCW_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCW\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCW\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCW\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCW\ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCG\DSCG_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCG\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCG\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCG\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCG\ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCB\DSCB_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCB\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCB\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCB\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCB\ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCS\DSCS_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCS\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCS\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCS\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSCS\ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSC\DSC_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSC\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSC\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSC\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DSC\ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICS\DICS_Action.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICS\FKTZS_ZF.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICS\FKTZS_ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICS\IDataAction.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DICS\ZSK.cs" />
+    <Compile Include="Bussiness\CompanyFunds\CompanyObject.cs" />
+    <Compile Include="Bussiness\CompanyFunds\DataConvert.cs" />
+    <Compile Include="Bussiness\IBaseAction.cs" />
+    <Compile Include="Bussiness\ICompanyAction.cs" />
+    <Compile Include="Bussiness\AfterSaleBussiness\AfterSaleObject.cs" />
+    <Compile Include="Bussiness\PersonalFunds\CompanyObject.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DataConvert.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSCW\DSCW.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSCW\DSCW_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSC\DSC.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSC\DSC_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSCS\DSCS.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DSCS\DSCS_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DTSS\DTSS.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DTSS\DTSS_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCSH\DCSH.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCSH\DCSH_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DICS\DICS.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DICS\DICS_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DFS\DFS.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DFS\DFS_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCT\DCT.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCT\DCT_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCBJ\DCBJD.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCBJ\DCBJ_Action.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCGZ\DCGZD.cs" />
+    <Compile Include="Bussiness\PersonalFunds\DCGZ\DCGZ_Action.cs" />
+    <Compile Include="Bussiness\Center_Subject.cs" />
+    <Compile Include="Bussiness\ReceiptApply\DICS\SpecialSaleEntity.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAP1\MAIN_COSTCENTER.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAP1\MAIN_CUSTOMER.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAP1\MAIN_SAP_FIN_ACCVOUCH.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAP1\MAIN_SUPPLIER.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAP2\MAIN_COSTCENTER.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAP2\MAIN_CUSTOMER.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAP2\MAIN_SUPPLIER.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAPDataToBPMObject.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAPDataToBPM_ACCVOUCH_Action.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAPDataToBPM_Action2.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAPDataToBPM_Action1.cs" />
+    <Compile Include="Bussiness\SAPDataToBPM\SAPDataToBPM_Action.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\AIncomePurchaseUpdate.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\Center_Subject.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\ForeignExchange\ForeignExchange.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\ForeignExchange\ForeignExchangeAction.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\IncomePurchaseUpdateObject.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\MACHPInvoice\SAPPAYHPInvoice_Action.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\MACHPInvoice\MAC2\MACHPTYPEInvoice.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\MACHPInvoice\MACHPTYPEInvoice_Action.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\MACHPInvoice\MAC1\MACHPInvoice.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\MACHPInvoice\MACHPInvoice_Action.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPAccount\SAP2\SAP_COMPANYFUNDS_LINKS_FAILED.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPAccount\SAPToBPMResult_Action2.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPAccount\SAPToBPMResult_Action1.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPIncome\SAP1\IncomeUpdate.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPIncome\SAP1\SAPIncome.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPIncome\SAPIncome_Action.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPKPSQPInvoice\SAP1\SAPKPSQPInvoice.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPKPSQPInvoice\SAPKPSQPInvoice_Action.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPPay\SAP2\SAP_PAY.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPPay\SAPToBPMPay_Action2.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPPay\SAPToBPMPay_Action1.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPPay\SAPToBPMPay_Action.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPPay\SAP1\SAP_PAY.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPPurchase\SAP1\PurchaseUpdate.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPPurchase\SAP1\SAPPurchaseNew.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPPurchase\SAP1\SAPPurchaseHD.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPPurchase\SAPPurchase_Action.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPResultType.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPToBPMResultObject.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPAccount\SAPToBPMResult_Action.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SAPAccount\SAP1\SAP_COMPANYFUNDS_LINKS_FAILED.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SECTION\SECTION.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\SECTION\SECTION_Action.cs" />
+    <Compile Include="Bussiness\SAPToBPMResult\_SAPToBPMResultObject.cs" />
+    <Compile Include="Bussiness\ISaveFileProvider.cs" />
+    <Compile Include="Bussiness\SSO\CompanyObject.cs" />
+    <Compile Include="Bussiness\SSO\DataConvert.cs" />
+    <Compile Include="Bussiness\SSO\DICS\DICS.cs" />
+    <Compile Include="Bussiness\SSO\DICS\DICS_Action.cs" />
+    <Compile Include="Bussiness\SyncOrg\Models\DataSourceFrameEntity.cs" />
+    <Compile Include="Bussiness\SyncOrg\SyncSrcData\DSZ\DataSourceDSZDataBuilder.cs" />
+    <Compile Include="Bussiness\SyncOrg\SyncSrcData\DSZ\DataSourceDSZFrame.cs" />
+    <Compile Include="Bussiness\SyncOrg\Models\DataSourceEntity.cs" />
+    <Compile Include="Bussiness\SyncOrg\SyncSrcData\DataSourceBasicFrame.cs" />
+    <Compile Include="Bussiness\SyncOrg\SyncOrgAction.cs" />
+    <Compile Include="Bussiness\SyncOrg\SyncOU\DSZ\DSZOUDirector.cs" />
+    <Compile Include="Bussiness\SyncOrg\SyncOU\DSZ\DSZOUBuilder.cs" />
+    <Compile Include="Bussiness\SyncOrg\SyncOU\OUBuilder.cs" />
+    <Compile Include="Bussiness\SyncOrg\SyncSrcData\DataSourceBasicDataBuilder.cs" />
+    <Compile Include="Bussiness\SyncOrg\SyncSrcData\IDataSourceDataBuilder.cs" />
+    <Compile Include="DB\SQLHelperExt.cs" />
+    <Compile Include="DB\Table\T_SAP_COMPANYFUNDS_LINKS_QUEUE.cs" />
+    <Compile Include="Helper\AccvouchEntityConvertStreamBaseManager.cs" />
+    <Compile Include="Helper\ClassPropertySort.cs" />
+    <Compile Include="Helper\ConfigInfo.cs" />
+    <Compile Include="DB\SQLHelper.cs" />
+    <Compile Include="Helper\ConnectFile.cs" />
+    <Compile Include="Helper\DTCProvider.cs" />
+    <Compile Include="Helper\EntityConvertStream.cs" />
+    <Compile Include="Helper\SaveFile\DB\LinksQueueConnection.cs" />
+    <Compile Include="MainStartAppTest.cs" />
+    <Compile Include="Helper\SaveFile\DB\SapLinksQueueEntity.cs" />
+    <Compile Include="Helper\SaveFile\DB\SapLinksQueueConnection.cs" />
+    <Compile Include="Helper\SaveFile\DB\SapLinksQueueConnectionFactory.cs" />
+    <Compile Include="Helper\SaveFile\File\SapSaveFileInfo.cs" />
+    <Compile Include="Helper\SaveFile\File\SapSaveFileProvider.cs" />
+    <Compile Include="Helper\SaveFile\File\ISaveFileProvider.cs" />
+    <Compile Include="Helper\SaveFile\File\SapSaveFileProviderFactory.cs" />
+    <Compile Include="Helper\MainFile.cs" />
+    <Compile Include="Helper\LogInfo.cs" />
+    <Compile Include="DB\MSSQLFactory.cs" />
+    <Compile Include="Helper\StringHelper.cs" />
+    <Compile Include="Bussiness\HistoryVersion\HistoryAction.cs" />
+    <Compile Include="MainStartApp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TempAction\TempIncomePurchaseUpdateAction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="SAPLinks_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bussiness\AfterSaleBussiness\FKTZProvider\AccountingSubject\类填充模板.txt" />
+    <Content Include="Bussiness\CompanyFunds\目录说明.txt" />
+    <Content Include="Bussiness\目录说明.txt" />
+    <Content Include="module.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bussiness\SyncOrg\SyncUser\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

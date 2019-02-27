@@ -1,0 +1,11 @@
+
+记录时间：2018-10-16 17:09:36,850 
+线程ID:[9]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPToBPMResult\SAPKPSQPInvoice\SAP1\SAPKPSQPInvoice.cs 第40行
+错误描述：System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 SAPLinks.Bussiness.SAPToBPMResult.SAPKPSQPInvoice.SAP1.SAPKPSQPInvoice.GetData() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPToBPMResult\SAPKPSQPInvoice\SAP1\SAPKPSQPInvoice.cs:行号 40
+-----------------------------------------

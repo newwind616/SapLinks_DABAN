@@ -1,0 +1,57 @@
+
+记录时间：2018-08-06 09:38:37,379 
+线程ID:[9]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs 第27行
+错误描述：未能找到文件“E:\VDR.TSV”。
+   在 SAPLinks.DTCProvider.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.SAPDataToBPM.SAPDataToBPM_Action2.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPDataToBPM\SAPDataToBPM_Action2.cs:行号 17
+-----------------------------------------
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IO.FileNotFoundException: 未能找到文件“E:\VDR.TSV”。
+   在 SAPLinks.DTCProvider.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.SAPDataToBPM.SAPDataToBPM_Action2.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPDataToBPM\SAPDataToBPM_Action2.cs:行号 17
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs:行号 27
+
+记录时间：2018-08-06 09:38:50,416 
+线程ID:[10]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs 第27行
+错误描述：未能找到文件“E:\VDR.TSV”。
+   在 SAPLinks.DTCProvider.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.SAPDataToBPM.SAPDataToBPM_Action2.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPDataToBPM\SAPDataToBPM_Action2.cs:行号 17
+-----------------------------------------
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IO.FileNotFoundException: 未能找到文件“E:\VDR.TSV”。
+   在 SAPLinks.DTCProvider.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.SAPDataToBPM.SAPDataToBPM_Action2.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPDataToBPM\SAPDataToBPM_Action2.cs:行号 17
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs:行号 27
+
+记录时间：2018-08-06 09:42:59,267 
+线程ID:[9]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs 第27行
+错误描述：未将对象引用设置到对象的实例。
+   在 SAPLinks.DTCProvider.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.SAPDataToBPM.SAPDataToBPM_Action2.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPDataToBPM\SAPDataToBPM_Action2.cs:行号 17
+-----------------------------------------
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SAPLinks.DTCProvider.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.SAPDataToBPM.SAPDataToBPM_Action2.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPDataToBPM\SAPDataToBPM_Action2.cs:行号 17
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs:行号 27

@@ -1,0 +1,17 @@
+记录时间：2018-09-27 10:08:22,771 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：exec BPMDB.DBO.proc_UpdateObjectDataMaster
+-----------------------------------------
+记录时间：2018-09-27 10:08:33,525 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第317行
+调试描述：INSERT INTO BPMSYSMESSAGESQUEUE(PROVIDERNAME,ADDRESS,TITLE,MESSAGE,CREATEAT,FAILCOUNT) VALUES ('mail','liu.zhenliang@daikin.co.jp','物料同步失败','找不到存储过程 ''BPMDB.DBO.proc_UpdateObjectDataMaster''。
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.ObjectDataMaster.ObjectDataMaster_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\ObjectDataMaster\ObjectDataMaster_Action.cs:行号 15',GETDATE(),0);
+
+-----------------------------------------

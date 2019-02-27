@@ -1,0 +1,9 @@
+由于程序问题导致COMPANY显示为编码，COMPANYCODE显示为公司简称
+修改方法：
+1.使用SQL ServerManagement Studio打开BPMDB库设计SAP_PAY
+2.COMPANY改名为COMPANY1
+3.保存
+4.COMPANYCODE改名为COMPANY
+5.保存
+6.COMPANY1改名为COMPANYCODE并上移一位
+7.保存

@@ -1,0 +1,198 @@
+记录时间：2018-08-06 09:35:34,990 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:35:38,396 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第204行
+调试描述：DELETE FROM MAIN_SUPPLIER WHERE SUPP_TYPE=0 AND COMPANY IN('DICA','DICB','DICG','DICN','DICS','DICW','DSC','DTSS','DSCS','DSCB','DSCG','DSCW')
+-----------------------------------------
+记录时间：2018-08-06 09:35:39,364 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT COMPANY,SUPP_ID,SUPP_NAME,SUPP_ABB,SUPP_TYPE,BANK_NAME,BANK_SUB_NAME,BANK_ACCOUNT,DEL_FLG,SUPP_CODE FROM MAIN_SUPPLIER WHERE COMPANY IN('DICA','DICB','DICG','DICN','DICS','DICW','DSC','DTSS','DSCS','DSCB','DSCG','DSCW')
+-----------------------------------------
+记录时间：2018-08-06 09:38:37,037 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:38:37,105 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:38:37,129 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第204行
+调试描述：DELETE FROM MAIN_SUPPLIER WHERE SUPP_TYPE=0 AND COMPANY IN('DCGZ','DCSH')
+-----------------------------------------
+记录时间：2018-08-06 09:38:37,166 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT COMPANY,SUPP_ID,SUPP_NAME,SUPP_ABB,SUPP_TYPE,BANK_NAME,BANK_SUB_NAME,BANK_ACCOUNT,DEL_FLG,SUPP_CODE FROM MAIN_SUPPLIER WHERE COMPANY IN('DCGZ','DCSH')
+-----------------------------------------
+记录时间：2018-08-06 09:38:37,389 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第317行
+调试描述：INSERT INTO BPMSYSMESSAGESQUEUE(PROVIDERNAME,ADDRESS,TITLE,MESSAGE,CREATEAT,FAILCOUNT) VALUES ('mail','liu.zhenliang@daikin.co.jp','SAP_DCC主数据同步BPM失败','未能找到文件“E:\VDR.TSV”。
+   在 SAPLinks.DTCProvider.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.SAPDataToBPM.SAPDataToBPM_Action2.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPDataToBPM\SAPDataToBPM_Action2.cs:行号 17',GETDATE(),0);
+
+-----------------------------------------
+记录时间：2018-08-06 09:38:50,072 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:38:50,140 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:38:50,154 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第204行
+调试描述：DELETE FROM MAIN_SUPPLIER WHERE SUPP_TYPE=0 AND COMPANY IN('DCGZ','DCSH')
+-----------------------------------------
+记录时间：2018-08-06 09:38:50,168 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT COMPANY,SUPP_ID,SUPP_NAME,SUPP_ABB,SUPP_TYPE,BANK_NAME,BANK_SUB_NAME,BANK_ACCOUNT,DEL_FLG,SUPP_CODE FROM MAIN_SUPPLIER WHERE COMPANY IN('DCGZ','DCSH')
+-----------------------------------------
+记录时间：2018-08-06 09:38:50,431 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第317行
+调试描述：INSERT INTO BPMSYSMESSAGESQUEUE(PROVIDERNAME,ADDRESS,TITLE,MESSAGE,CREATEAT,FAILCOUNT) VALUES ('mail','liu.zhenliang@daikin.co.jp','SAP_DCC主数据同步BPM失败','未能找到文件“E:\VDR.TSV”。
+   在 SAPLinks.DTCProvider.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.SAPDataToBPM.SAPDataToBPM_Action2.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPDataToBPM\SAPDataToBPM_Action2.cs:行号 17',GETDATE(),0);
+
+-----------------------------------------
+记录时间：2018-08-06 09:40:01,468 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:42:31,579 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:42:31,649 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:42:31,666 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第204行
+调试描述：DELETE FROM MAIN_SUPPLIER WHERE SUPP_TYPE=0 AND COMPANY IN('DCGZ','DCSH')
+-----------------------------------------
+记录时间：2018-08-06 09:42:31,767 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT COMPANY,SUPP_ID,SUPP_NAME,SUPP_ABB,SUPP_TYPE,BANK_NAME,BANK_SUB_NAME,BANK_ACCOUNT,DEL_FLG,SUPP_CODE FROM MAIN_SUPPLIER WHERE COMPANY IN('DCGZ','DCSH')
+-----------------------------------------
+记录时间：2018-08-06 09:42:48,398 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:42:48,465 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:42:48,479 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第204行
+调试描述：DELETE FROM MAIN_SUPPLIER WHERE SUPP_TYPE=0 AND COMPANY IN('DCGZ','DCSH')
+-----------------------------------------
+记录时间：2018-08-06 09:42:48,491 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT COMPANY,SUPP_ID,SUPP_NAME,SUPP_ABB,SUPP_TYPE,BANK_NAME,BANK_SUB_NAME,BANK_ACCOUNT,DEL_FLG,SUPP_CODE FROM MAIN_SUPPLIER WHERE COMPANY IN('DCGZ','DCSH')
+-----------------------------------------
+记录时间：2018-08-06 09:42:59,294 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第317行
+调试描述：INSERT INTO BPMSYSMESSAGESQUEUE(PROVIDERNAME,ADDRESS,TITLE,MESSAGE,CREATEAT,FAILCOUNT) VALUES ('mail','liu.zhenliang@daikin.co.jp','SAP_DCC主数据同步BPM失败','未将对象引用设置到对象的实例。
+   在 SAPLinks.DTCProvider.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.SAPDataToBPM.SAPDataToBPM_Action2.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\SAPDataToBPM\SAPDataToBPM_Action2.cs:行号 17',GETDATE(),0);
+
+-----------------------------------------
+记录时间：2018-08-06 09:43:05,212 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:43:05,279 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-08-06 09:43:05,295 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第204行
+调试描述：DELETE FROM MAIN_SUPPLIER WHERE SUPP_TYPE=0 AND COMPANY IN('DCGZ','DCSH')
+-----------------------------------------
+记录时间：2018-08-06 09:43:05,308 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT COMPANY,SUPP_ID,SUPP_NAME,SUPP_ABB,SUPP_TYPE,BANK_NAME,BANK_SUB_NAME,BANK_ACCOUNT,DEL_FLG,SUPP_CODE FROM MAIN_SUPPLIER WHERE COMPANY IN('DCGZ','DCSH')
+-----------------------------------------

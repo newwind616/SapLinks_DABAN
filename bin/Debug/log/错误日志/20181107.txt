@@ -1,0 +1,86 @@
+
+记录时间：2018-11-07 13:39:26,543 
+线程ID:[9]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\ConfigInfo.cs 第22行
+错误描述：【DICN_Path_P】未将对象引用设置到对象的实例。
+-----------------------------------------
+
+记录时间：2018-11-07 13:40:54,832 
+线程ID:[10]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\ConfigInfo.cs 第22行
+错误描述：【DSZ_Path_P】未将对象引用设置到对象的实例。
+-----------------------------------------
+
+记录时间：2018-11-07 13:41:05,046 
+线程ID:[10]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\ConfigInfo.cs 第22行
+错误描述：【DSCG_Path_P】未将对象引用设置到对象的实例。
+-----------------------------------------
+
+记录时间：2018-11-07 13:41:33,968 
+线程ID:[10]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\ConfigInfo.cs 第22行
+错误描述：【DSCW_Path_P】未将对象引用设置到对象的实例。
+-----------------------------------------
+
+记录时间：2018-11-07 13:42:03,629 
+线程ID:[10]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Helper\ConfigInfo.cs 第22行
+错误描述：【DICN_Path_P】未将对象引用设置到对象的实例。
+-----------------------------------------
+
+记录时间：2018-11-07 13:46:24,821 
+线程ID:[10]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs 第27行
+错误描述：在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN.GetData() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN.cs:行号 19
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.D_DICN() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 46
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 21
+-----------------------------------------
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Exception: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN.GetData() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN.cs:行号 19
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.D_DICN() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 46
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 21
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs:行号 27
+
+记录时间：2018-11-07 13:46:42,454 
+线程ID:[9]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs 第27行
+错误描述：找不到存储过程 'DABAN_BPM_DICN.DBO.P_GetSAPInfo'。
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN.GetData() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN.cs:行号 19
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.D_DICN() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 46
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 21
+-----------------------------------------
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Exception: 找不到存储过程 'DABAN_BPM_DICN.DBO.P_GetSAPInfo'。
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN.GetData() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN.cs:行号 19
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.D_DICN() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 46
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 21
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\BaseAction.cs:行号 27

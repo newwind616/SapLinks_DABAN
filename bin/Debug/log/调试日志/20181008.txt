@@ -1,0 +1,42 @@
+记录时间：2018-10-08 09:26:25,868 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-10-08 09:26:26,102 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第204行
+调试描述：DELETE FROM MAIN_COSTCENTER WHERE COMPANY IN ('DICA','DICB','DICG','DICN','DICS','DICW','DSC','DTSS','DSCS','DSCB','DSCG','DSCW')
+-----------------------------------------
+记录时间：2018-10-08 09:26:26,337 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT COMPANY, CODE, NAME, DEPARTMENT, DEPARTMENT_TYPE, DEL_FLG FROM [DBO].[MAIN_COSTCENTER] WHERE COMPANY IN ('DICA','DICB','DICG','DICN','DICS','DICW','DSC','DTSS','DSCS','DSCB','DSCG','DSCW')
+-----------------------------------------
+记录时间：2018-10-08 09:26:34,093 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT SAP_CD,CD FROM MAIN_COMPANY
+-----------------------------------------
+记录时间：2018-10-08 09:26:34,173 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第204行
+调试描述：DELETE FROM MAIN_COSTCENTER WHERE COMPANY IN ('DICA','DICB','DICG','DICN','DICS','DICW','DSC','DTSS','DSCS','DSCB','DSCG','DSCW')
+-----------------------------------------
+记录时间：2018-10-08 09:26:34,186 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：SELECT COMPANY, CODE, NAME, DEPARTMENT, DEPARTMENT_TYPE, DEL_FLG FROM [DBO].[MAIN_COSTCENTER] WHERE COMPANY IN ('DICA','DICB','DICG','DICN','DICS','DICW','DSC','DTSS','DSCS','DSCB','DSCG','DSCW')
+-----------------------------------------

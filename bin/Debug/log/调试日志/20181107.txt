@@ -1,0 +1,38 @@
+记录时间：2018-11-07 13:46:05,819 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：exec DABAN_BPM_DICN.DBO.P_GetSAPInfo @COMPANY ='DICN'
+-----------------------------------------
+记录时间：2018-11-07 13:46:24,835 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第317行
+调试描述：INSERT INTO BPMSYSMESSAGESQUEUE(PROVIDERNAME,ADDRESS,TITLE,MESSAGE,CREATEAT,FAILCOUNT) VALUES ('mail','liu.zhenliang@daikin.co.jp','个人经费-DICN失败','在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN.GetData() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN.cs:行号 19
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.D_DICN() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 46
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 21',GETDATE(),0);
+
+-----------------------------------------
+记录时间：2018-11-07 13:46:41,652 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第593行
+调试描述：exec DABAN_BPM_DICN.DBO.P_GetSAPInfo @COMPANY ='DICN'
+-----------------------------------------
+记录时间：2018-11-07 13:46:42,468 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs 第317行
+调试描述：INSERT INTO BPMSYSMESSAGESQUEUE(PROVIDERNAME,ADDRESS,TITLE,MESSAGE,CREATEAT,FAILCOUNT) VALUES ('mail','liu.zhenliang@daikin.co.jp','个人经费-DICN失败','找不到存储过程 ''DABAN_BPM_DICN.DBO.P_GetSAPInfo''。
+   在 SAPLinks.SQLHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\DB\SQLHelper.cs:行号 601
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN.GetData() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN.cs:行号 19
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.D_DICN() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 46
+   在 SAPLinks.Bussiness.PersonalFunds.DICN.DICN_Action.Start() 位置 F:\YZDocument\项目\大金\FlowPortal\doc\SAPLinks\SAPLinks\Bussiness\PersonalFunds\DICN\DICN_Action.cs:行号 21',GETDATE(),0);
+
+-----------------------------------------

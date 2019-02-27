@@ -1,0 +1,6 @@
+﻿文件夹说明：
+DICS：上海公司SAP联携
+
+程序类说明：
+DataConvert.cs：数据转换，如会计科目、根据供应商代码改变记账代码等
+CompanyObject.cs:各公司级下的xxx_Action.cs的基类，存放公司信息，装载基础数据等
