@@ -43,6 +43,8 @@ namespace SAPLinks.Bussiness.SSO.DICS
                 //数据填充结束
                 file_sb.AppendLine(Create(list));
             }
+
+            //更新SAP_COMPANYFUNDS_LINKS_QUEUE
             string dateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
             upLinks_sql.AppendFormat(" update [BPMDB].[dbo].[SAP_COMPANYFUNDS_LINKS_QUEUE] set ISLINK=1,SAP_DATE = '{1}' where ID in({0}) ", string.Join(",", idlist.ToArray()), dateTime);
             
