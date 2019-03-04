@@ -1,0 +1,19 @@
+
+记录时间：2019-03-04 13:57:13,899 
+线程ID:[8]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\Bussiness\BaseAction.cs 第27行
+错误描述：索引超出了数组界限。
+   在 SAPLinks.DTCProvider.Start() 位置 H:\SAPLinks-190227\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.EDIDataToDABAN.EDIDataToDABAN_Action.Start() 位置 H:\SAPLinks-190227\SAPLinks\Bussiness\EDIDataToDABAN\EDIDataToDABAN_Action.cs:行号 14
+-----------------------------------------
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 SAPLinks.DTCProvider.Start() 位置 H:\SAPLinks-190227\SAPLinks\Helper\DTCProvider.cs:行号 36
+   在 SAPLinks.Bussiness.EDIDataToDABAN.EDIDataToDABAN_Action.Start() 位置 H:\SAPLinks-190227\SAPLinks\Bussiness\EDIDataToDABAN\EDIDataToDABAN_Action.cs:行号 14
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 H:\SAPLinks-190227\SAPLinks\Bussiness\BaseAction.cs:行号 27

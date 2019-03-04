@@ -69,5 +69,6 @@
   <!--<item Index="57" Caption="售后业务-DSCG" Explain="售后业务员（DSCG）上传SAP联携" FormPath="SAPLinks.MainStartAppTest" />-->
   <item Index="57" Caption="个人经费-DCSL" Explain="个人经费（DCSL）上传SAP联携" FormPath="SAPLinks.Bussiness.PersonalFunds.DCSL.DCSL_Action" />
   <item Index="58" Caption="SSO权限申请-DICS" Explain="SSO权限申请（DICS）上传SAP联携" FormPath="SAPLinks.Bussiness.SSO.DICS.DICS_Action" />
+  <item Index="59" Caption="EDI数据同步回DABAN" Explain="EDI数据同步回DABAN" FormPath="SAPLinks.Bussiness.EDIDataToDABAN.EDIDataToDABAN_Action" />
   
 </root>

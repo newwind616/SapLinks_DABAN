@@ -106,6 +106,9 @@
     <Compile Include="Bussiness\CompanyFunds\DSC_B\FKTZS_ZSK.cs" />
     <Compile Include="Bussiness\CompanyFunds\DSC_B\IDataAction.cs" />
     <Compile Include="Bussiness\CompanyFunds\DSC_B\ZSK.cs" />
+    <Compile Include="Bussiness\EDIDataToDABAN\EDIDataToDABANObject.cs" />
+    <Compile Include="Bussiness\EDIDataToDABAN\EDIDataToDABAN_Action.cs" />
+    <Compile Include="Bussiness\EDIDataToDABAN\EDI\MAIN_EDI_DATA.cs" />
     <Compile Include="Bussiness\KFSQ\AccVouch.cs" />
     <Compile Include="Bussiness\KFSQ\DICS\DICS_Action.cs" />
     <Compile Include="Bussiness\ObjectDataMaster\ObjectDataMaster_Action.cs" />
