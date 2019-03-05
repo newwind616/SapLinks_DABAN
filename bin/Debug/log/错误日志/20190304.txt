@@ -17,3 +17,14 @@ System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.
    在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
    在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
    在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 H:\SAPLinks-190227\SAPLinks\Bussiness\BaseAction.cs:行号 27
+
+记录时间：2019-03-04 15:32:55,166 
+线程ID:[9]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\Bussiness\EDIDataToDABAN\EDI\MAIN_EDI_DATA.cs 第67行
+错误描述：System.ArgumentNullException: 值不能为 null。
+参数名: table
+   在 SAPLinks.Bussiness.EDIDataToDABAN.EDIDataToDABANObject.ExecuteMainData(DataTable mainDatatable, String tableName) 位置 H:\SAPLinks-190227\SAPLinks\Bussiness\EDIDataToDABAN\EDIDataToDABANObject.cs:行号 56
+   在 SAPLinks.Bussiness.EDIDataToDABAN.EDI.MAIN_EDI_DATA.GetData() 位置 H:\SAPLinks-190227\SAPLinks\Bussiness\EDIDataToDABAN\EDI\MAIN_EDI_DATA.cs:行号 67
+-----------------------------------------

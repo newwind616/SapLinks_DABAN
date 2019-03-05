@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
+using System.IO;
 
 
 namespace SAPLinks.Bussiness.EDIDataToDABAN
@@ -19,7 +20,28 @@ namespace SAPLinks.Bussiness.EDIDataToDABAN
 
         public int errorCount = 0;
 
+        private string FolderPath_Queue;
+
+        public string folderPath_Queue {
+            get { return AddLastString(this.FolderPath_Queue); } set { this.FolderPath_Queue = value; }
+        }
+
         protected Dictionary<string, string> dic = new Dictionary<string, string>();
+
+        /// <summary>
+        /// 检查文件路径末尾是否带\如果没带补\
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        private string AddLastString(string str)
+        {
+            if (str.LastIndexOf('\\') == str.Length - 1)
+                return str;
+            else
+                return str + "\\";
+        }
+
+
 
         public EDIDataToDABANObject(string filePath, BaseAction baseAction, Center_Subject subject)
         {
@@ -50,6 +72,7 @@ namespace SAPLinks.Bussiness.EDIDataToDABAN
                 try
                 {
                     bulk.WriteToServer(mainDatatable.GetChanges());
+                    
                 }
                 catch (Exception ex)
                 {
@@ -65,6 +88,17 @@ namespace SAPLinks.Bussiness.EDIDataToDABAN
             LogInfo.Log.Info("" + type.FullName + "(" + filePath + ")【错误数据过滤】：" + errorCount + "条");
 
 
+        }
+
+        /// <summary>
+        /// 文件移动方法
+        /// </summary>
+        /// <param name="NextFile"></param>
+        /// <param name="tagFolderPath"></param>
+        protected void FileMove(FileInfo NextFile, string tagFolderPath)
+        {
+            LogInfo.Log.Info(string.Format("文件:{0}移动至{1}", NextFile.Name, tagFolderPath + NextFile.Name));
+            File.Move(NextFile.FullName, tagFolderPath + NextFile.Name);
         }
         abstract public void GetData();
     }

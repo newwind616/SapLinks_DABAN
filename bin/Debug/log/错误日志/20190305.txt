@@ -1,0 +1,16 @@
+
+记录时间：2019-03-05 10:02:38,992 
+线程ID:[1]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\Bussiness\EDIDataToDABAN\EDI\MAIN_EDI_DATA.cs 第39行
+错误描述：文件:Delta_invoice_20190304130722 - 副本.csv-第2行供应商编码:A001发票代码:INV发票号码:41559已经存在于MAIN_EDI_DATA表中
+-----------------------------------------
+
+记录时间：2019-03-05 10:02:39,002 
+线程ID:[1]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\Bussiness\EDIDataToDABAN\EDI\MAIN_EDI_DATA.cs 第39行
+错误描述：文件:Delta_invoice_20190304130722.csv-第2行供应商编码:A001发票代码:INV发票号码:46589已经存在于MAIN_EDI_DATA表中
+-----------------------------------------

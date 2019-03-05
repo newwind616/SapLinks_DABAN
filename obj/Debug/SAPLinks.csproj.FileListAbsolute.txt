@@ -38,4 +38,3 @@ H:\SAPLinks-190227\SAPLinks\bin\Debug\App.config
 H:\SAPLinks-190227\SAPLinks\bin\Debug\Log4net.config
 H:\SAPLinks-190227\SAPLinks\bin\Debug\SAPLinks.exe
 H:\SAPLinks-190227\SAPLinks\bin\Debug\SAPLinks.pdb
-H:\SAPLinks-190227\SAPLinks\obj\Debug\SAPLinks.csprojResolveAssemblyReference.cache

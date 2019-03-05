@@ -9,8 +9,9 @@ namespace SAPLinks.Bussiness.EDIDataToDABAN.EDI
 {
     public class MAIN_EDI_DATA : EDIDataToDABANObject
     {
-        public MAIN_EDI_DATA(string paths,  BaseAction baseAction, Center_Subject subject) : base(paths, baseAction, subject)
+        public MAIN_EDI_DATA(string paths, string folderPath_Queue, BaseAction baseAction, Center_Subject subject) : base(paths, baseAction, subject)
         {
+            this.folderPath_Queue = folderPath_Queue;
         }
 
         public override void GetData()
@@ -34,7 +35,8 @@ namespace SAPLinks.Bussiness.EDIDataToDABAN.EDI
                         string[] strs = strlist[i].Split('\t');
                         if (dic.ContainsValue(strs[2] + strs[3]))
                         {
-                            errMsg.AppendLine(string.Format("第{0}行供应商编码:{1}发票代码:{2}发票号码:{3}已经存在于MAIN_EDI_DATA表中", (i + 1), strs[1], strs[2], strs[3]));
+                            errMsg.AppendLine(string.Format("文件:{4}-第{0}行供应商编码:{1}发票代码:{2}发票号码:{3}已经存在于MAIN_EDI_DATA表中", (i + 1), strs[1], strs[2], strs[3], NextFile.Name));
+                            LogInfo.Log.Error(string.Format("文件:{4}-第{0}行供应商编码:{1}发票代码:{2}发票号码:{3}已经存在于MAIN_EDI_DATA表中", (i + 1), strs[1], strs[2], strs[3], NextFile.Name));
                             errorCount++;
                             continue;
                         }
@@ -61,6 +63,8 @@ namespace SAPLinks.Bussiness.EDIDataToDABAN.EDI
 
                     }
                 }
+
+                FileMove(NextFile, folderPath_Queue);
             }
             try
             {

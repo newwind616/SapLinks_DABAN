@@ -1,0 +1,112 @@
+记录时间：2019-03-05 09:32:47,344 
+线程ID:[8]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-05 09:32:49,625 
+线程ID:[8]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], [STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------
+记录时间：2019-03-05 09:41:32,047 
+线程ID:[8]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-05 09:41:33,359 
+线程ID:[8]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], [STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------
+记录时间：2019-03-05 09:43:49,551 
+线程ID:[8]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-05 09:43:51,259 
+线程ID:[8]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], [STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------
+记录时间：2019-03-05 09:44:47,947 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-05 09:44:47,991 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], [STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------
+记录时间：2019-03-05 09:47:08,801 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-05 09:47:08,844 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], [STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------
+记录时间：2019-03-05 09:54:41,953 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-05 09:54:41,994 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], [STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------
+记录时间：2019-03-05 09:58:40,592 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-05 09:58:40,635 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], [STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------
+记录时间：2019-03-05 10:02:38,945 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-05 10:02:38,987 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], [STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------

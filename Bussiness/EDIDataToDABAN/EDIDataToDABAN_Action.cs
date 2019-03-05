@@ -17,7 +17,7 @@ namespace SAPLinks.Bussiness.EDIDataToDABAN
         private void Go()
         {
             Center_Subject center = new Center_Subject();
-            EDIDataToDABANObject ediob = new EDI.MAIN_EDI_DATA("MAIN_EDI".ToAppSetting(), this, center);
+            EDIDataToDABANObject ediob = new EDI.MAIN_EDI_DATA("MAIN_EDI".ToAppSetting(), "MAIN_EDIFolderQueue".ToAppSetting(), this, center);
             center.Refresh();
         }
     }
