@@ -15,7 +15,7 @@ namespace SAPLinks.Bussiness.DABANToEDI
         {
             List<string> list = new List<string>();
             List<string> idlist = new List<string>();
-            string sql = string.Format("select ID, COMPANY, INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN,  AMOUNT, TAX,SAP_DISTNAME from [BPMDB].[dbo].MAIN_EDI_DATA where STATE=0");
+            string sql = string.Format("select ID, COMPANY, INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN,  AMOUNT, TAX,SAP_DIST from [BPMDB].[dbo].MAIN_EDI_DATA where STATE=0");
             DataTable dt = SQLHelper.ExecuteDataset(context.connStr, System.Data.CommandType.Text, sql).Tables[0];
             LogInfo.Log.Info("《DABANToEDI》获取需处理数量：" + dt.Rows.Count + "条");
             if (dt.Rows.Count == 0)
