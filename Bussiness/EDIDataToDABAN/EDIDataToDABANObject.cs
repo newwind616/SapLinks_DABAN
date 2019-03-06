@@ -85,7 +85,7 @@ namespace SAPLinks.Bussiness.EDIDataToDABAN
         {
             Type type = this.GetType();
             LogInfo.Log.Info("" + type.FullName + "(" + filePath + ")【成功数据】：" + successCount + "条");
-            LogInfo.Log.Info("" + type.FullName + "(" + filePath + ")【错误数据过滤】：" + errorCount + "条");
+            LogInfo.Log.Info("" + type.FullName + "(" + filePath + ")【错误数据过滤】：" + errorCount + "条，详细见错误日志");
 
 
         }

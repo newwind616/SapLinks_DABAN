@@ -19,7 +19,7 @@ namespace SAPLinks.Bussiness.EDIDataToDABAN.EDI
             LogInfo.Log.Info("执行EDI行主数据同步");
             StringBuilder errMsg = new StringBuilder();
             StringBuilder successMsg = new StringBuilder();
-            DataTable mainedi = SQLHelper.ExecuteDataset(context.connStr, CommandType.Text, "SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], [STATE] FROM MAIN_EDI_DATA ").Tables[0];
+            DataTable mainedi = SQLHelper.ExecuteDataset(context.connStr, CommandType.Text, "SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], SAP_DISTNAME,[STATE] FROM MAIN_EDI_DATA ").Tables[0];
             DataRow dr;
 
             DirectoryInfo TheFolder = new DirectoryInfo(filePath);
@@ -55,6 +55,7 @@ namespace SAPLinks.Bussiness.EDIDataToDABAN.EDI
                         dr["PAY_DATE"] = Convert.ToDateTime(strs[10]).ToString("yyyy-MM-dd");
                         dr["MONTH"] = strs[11];
                         dr["URL"] = strs[12];
+                        dr["SAP_DISTNAME"] = strs[13];
                         dr["STATE"] = "0";
 
                         mainedi.Rows.Add(dr);

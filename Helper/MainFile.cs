@@ -12,6 +12,11 @@ namespace SAPLinks
         {
             return WriteFile(filePath, fileName, msg, new System.Text.UTF8Encoding(false));
         }
+
+        public static Boolean WriteFile_(string filePath, string fileName, string msg)
+        {
+            return WriteFile(filePath, fileName, msg, new System.Text.UTF8Encoding(true));
+        }
         public static Boolean WriteFile(string filePath, string fileName, string msg,Encoding encoding)
         {
             try

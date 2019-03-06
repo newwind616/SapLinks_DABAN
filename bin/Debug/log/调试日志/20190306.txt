@@ -1,0 +1,56 @@
+记录时间：2019-03-06 10:17:01,672 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-06 10:17:01,743 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], SAP_DISTNAME,[STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------
+记录时间：2019-03-06 10:17:59,370 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：select ID, COMPANY, INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN,  AMOUNT, TAX,SAP_DISTNAME from [BPMDB].[dbo].MAIN_EDI_DATA where STATE=0
+-----------------------------------------
+记录时间：2019-03-06 10:17:59,563 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第237行
+调试描述： update [BPMDB].[dbo].MAIN_EDI_DATA set STATE=1 where ID in(45,46,47,48) 
+-----------------------------------------
+记录时间：2019-03-06 10:24:20,746 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-06 10:24:20,796 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], SAP_DISTNAME,[STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------
+记录时间：2019-03-06 10:24:46,060 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：select ID, COMPANY, INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN,  AMOUNT, TAX,SAP_DISTNAME from [BPMDB].[dbo].MAIN_EDI_DATA where STATE=0
+-----------------------------------------
+记录时间：2019-03-06 10:24:46,114 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第237行
+调试描述： update [BPMDB].[dbo].MAIN_EDI_DATA set STATE=1 where ID in(49,50,51,52) 
+-----------------------------------------

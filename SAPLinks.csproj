@@ -106,6 +106,10 @@
     <Compile Include="Bussiness\CompanyFunds\DSC_B\FKTZS_ZSK.cs" />
     <Compile Include="Bussiness\CompanyFunds\DSC_B\IDataAction.cs" />
     <Compile Include="Bussiness\CompanyFunds\DSC_B\ZSK.cs" />
+    <Compile Include="Bussiness\DABANToEDI\EDI.cs" />
+    <Compile Include="Bussiness\DABANToEDI\EDIObject.cs" />
+    <Compile Include="Bussiness\DABANToEDI\DataConvert.cs" />
+    <Compile Include="Bussiness\DABANToEDI\EDI_Action.cs" />
     <Compile Include="Bussiness\EDIDataToDABAN\EDIDataToDABANObject.cs" />
     <Compile Include="Bussiness\EDIDataToDABAN\EDIDataToDABAN_Action.cs" />
     <Compile Include="Bussiness\EDIDataToDABAN\EDI\MAIN_EDI_DATA.cs" />
