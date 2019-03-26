@@ -15,10 +15,10 @@ namespace SAPLinks.Bussiness.SAPToBPMResult.ForeignExchange
             this.folderPath_Faild = folderPath_Faild;
         }
 
-        //时间    美元  欧元  日元  港币
+        //时间    美元  欧元  日元  港币  泰铢  马币
         public override void GetData()
         {
-            string sql = "insert into MAIN_FOREIGN_EXCHANGE(DATE,USD,EUR,JPY,HKD) values ('{0}','{1}','{2}','{3}','{4}');";
+            string sql = "insert into MAIN_FOREIGN_EXCHANGE(DATE,USD,EUR,JPY,HKD,THB,MYR) values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}');";
             ConnectFile.connectState(folderPath_Queue, "NisMail_UserName".ToAppSetting(), "NisMail_PWD".ToAppSetting());
             DirectoryInfo TheFolder = new DirectoryInfo(this.folderPath_Queue);
             foreach (FileInfo NextFile in TheFolder.GetFiles("dabanhl_*.txt"))
@@ -42,7 +42,9 @@ namespace SAPLinks.Bussiness.SAPToBPMResult.ForeignExchange
                             decimal EUR = Convert.ToDecimal(strs[2]);
                             decimal JPY = Convert.ToDecimal(strs[3]);
                             decimal HKD = Convert.ToDecimal(strs[4]);
-                            sb.AppendLine(string.Format(sql, date.ToShortDateString(), USD, EUR, JPY, HKD));
+                            decimal THB = Convert.ToDecimal(strs[5]);
+                            decimal MYR = Convert.ToDecimal(strs[6]);
+                            sb.AppendLine(string.Format(sql, date.ToShortDateString(), USD, EUR, JPY, HKD,THB,MYR));
                         }
                     }
                     Execute(sb.ToString(), NextFile);

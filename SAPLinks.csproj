@@ -277,6 +277,10 @@
     <Compile Include="Bussiness\PersonalFunds\DCGZ\DCGZ_Action.cs" />
     <Compile Include="Bussiness\Center_Subject.cs" />
     <Compile Include="Bussiness\ReceiptApply\DICS\SpecialSaleEntity.cs" />
+    <Compile Include="Bussiness\SalesForceToDABAN\DataConvert.cs" />
+    <Compile Include="Bussiness\SalesForceToDABAN\SalesForce.cs" />
+    <Compile Include="Bussiness\SalesForceToDABAN\SalesForceObject.cs" />
+    <Compile Include="Bussiness\SalesForceToDABAN\SalesForce_Action.cs" />
     <Compile Include="Bussiness\SAPDataToBPM\SAP1\MAIN_COSTCENTER.cs" />
     <Compile Include="Bussiness\SAPDataToBPM\SAP1\MAIN_CUSTOMER.cs" />
     <Compile Include="Bussiness\SAPDataToBPM\SAP1\MAIN_SAP_FIN_ACCVOUCH.cs" />

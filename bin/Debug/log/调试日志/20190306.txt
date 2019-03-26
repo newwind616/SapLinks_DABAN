@@ -54,3 +54,56 @@
 程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第237行
 调试描述： update [BPMDB].[dbo].MAIN_EDI_DATA set STATE=1 where ID in(49,50,51,52) 
 -----------------------------------------
+记录时间：2019-03-06 11:37:49,268 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-06 11:37:49,324 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT COMPANY, DIST_CODE,INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN, DEPT_CODE, AMOUNT, TAX, PAY_DATE, [MONTH], [URL], SAP_DIST,[STATE] FROM MAIN_EDI_DATA 
+-----------------------------------------
+记录时间：2019-03-06 11:38:24,132 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：select ID, COMPANY, INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN,  AMOUNT, TAX,SAP_DIST from [BPMDB].[dbo].MAIN_EDI_DATA where STATE=0
+-----------------------------------------
+记录时间：2019-03-06 11:38:24,211 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第237行
+调试描述： update [BPMDB].[dbo].MAIN_EDI_DATA set STATE=1 where ID in(53,54,55,56) 
+-----------------------------------------
+记录时间：2019-03-06 11:38:24,291 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第318行
+调试描述：INSERT INTO BPMSYSMESSAGESQUEUE(PROVIDERNAME,ADDRESS,TITLE,MESSAGE,CREATEAT,FAILCOUNT) VALUES ('mail','liu.zhenliang@daikin.co.jp','DABAN数据同步回EDI失败','未能找到路径“F:\EDI\EDIToDABAN\Daban_invoice_20190306113824.CSV”的一部分。
+   在 SAPLinks.MainFile.WriteFile(String filePath, String fileName, String msg, Encoding encoding) 位置 H:\SAPLinks-190227\SAPLinks\Helper\MainFile.cs:行号 63
+   在 SAPLinks.MainFile.WriteFile_(String filePath, String fileName, String msg) 位置 H:\SAPLinks-190227\SAPLinks\Helper\MainFile.cs:行号 18
+   在 SAPLinks.Bussiness.DABANToEDI.EDI_Action.Start() 位置 H:\SAPLinks-190227\SAPLinks\Bussiness\DABANToEDI\EDI_Action.cs:行号 33',GETDATE(),0);
+
+-----------------------------------------
+记录时间：2019-03-06 11:40:33,540 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：select ID, COMPANY, INV_CODE, INV_NO, INV_DATE, INV_NAME, INV_TIN,  AMOUNT, TAX,SAP_DIST from [BPMDB].[dbo].MAIN_EDI_DATA where STATE=0
+-----------------------------------------
+记录时间：2019-03-06 11:40:33,594 
+线程ID:[1]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第237行
+调试描述： update [BPMDB].[dbo].MAIN_EDI_DATA set STATE=1 where ID in(53,54,55,56) 
+-----------------------------------------

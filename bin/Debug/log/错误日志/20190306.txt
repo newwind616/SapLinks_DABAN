@@ -1,0 +1,36 @@
+
+记录时间：2019-03-06 11:38:24,273 
+线程ID:[1]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\Helper\MainFile.cs 第33行
+错误描述：System.IO.DirectoryNotFoundException: 未能找到路径“F:\EDI\EDIToDABAN\Daban_invoice_20190306113824.CSV”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 SAPLinks.MainFile.WriteFile(String filePath, String fileName, String msg, Encoding encoding) 位置 H:\SAPLinks-190227\SAPLinks\Helper\MainFile.cs:行号 33
+-----------------------------------------
+
+记录时间：2019-03-06 11:38:24,282 
+线程ID:[1]
+事件级别:ERROR 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\Bussiness\BaseAction.cs 第27行
+错误描述：未能找到路径“F:\EDI\EDIToDABAN\Daban_invoice_20190306113824.CSV”的一部分。
+   在 SAPLinks.MainFile.WriteFile(String filePath, String fileName, String msg, Encoding encoding) 位置 H:\SAPLinks-190227\SAPLinks\Helper\MainFile.cs:行号 63
+   在 SAPLinks.MainFile.WriteFile_(String filePath, String fileName, String msg) 位置 H:\SAPLinks-190227\SAPLinks\Helper\MainFile.cs:行号 18
+   在 SAPLinks.Bussiness.DABANToEDI.EDI_Action.Start() 位置 H:\SAPLinks-190227\SAPLinks\Bussiness\DABANToEDI\EDI_Action.cs:行号 33
+-----------------------------------------
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“F:\EDI\EDIToDABAN\Daban_invoice_20190306113824.CSV”的一部分。
+   在 SAPLinks.MainFile.WriteFile(String filePath, String fileName, String msg, Encoding encoding) 位置 H:\SAPLinks-190227\SAPLinks\Helper\MainFile.cs:行号 63
+   在 SAPLinks.MainFile.WriteFile_(String filePath, String fileName, String msg) 位置 H:\SAPLinks-190227\SAPLinks\Helper\MainFile.cs:行号 18
+   在 SAPLinks.Bussiness.DABANToEDI.EDI_Action.Start() 位置 H:\SAPLinks-190227\SAPLinks\Bussiness\DABANToEDI\EDI_Action.cs:行号 33
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SAPLinks.Bussiness.BaseAction.PostEvent(String methodName) 位置 H:\SAPLinks-190227\SAPLinks\Bussiness\BaseAction.cs:行号 27

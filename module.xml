@@ -72,4 +72,7 @@
   <item Index="59" Caption="EDI数据同步回DABAN" Explain="EDI数据同步回DABAN" FormPath="SAPLinks.Bussiness.EDIDataToDABAN.EDIDataToDABAN_Action" />
   <item Index="60" Caption="DABAN数据同步回EDI" Explain="DABAN数据同步回EDI" FormPath="SAPLinks.Bussiness.DABANToEDI.EDI_Action" />
 
+  <item Index="61" Caption="SalesForce数据同步回DABAN" Explain="SalesForce数据同步回DABAN" FormPath="SAPLinks.Bussiness.SalesForceToDABAN.SalesForce_Action" />
+
+
 </root>

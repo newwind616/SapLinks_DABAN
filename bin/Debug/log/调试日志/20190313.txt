@@ -1,0 +1,14 @@
+记录时间：2019-03-13 14:09:02,218 
+线程ID:[10]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
+记录时间：2019-03-13 14:10:42,212 
+线程ID:[9]
+事件级别:DEBUG 
+相关类名:SAPLinks.LogInfo
+程序文件:H:\SAPLinks-190227\SAPLinks\DB\SQLHelper.cs 第594行
+调试描述：SELECT ID, INV_CODE,INV_NO FROM MAIN_EDI_DATA
+-----------------------------------------
